@@ -1,0 +1,64 @@
+/* Public holding page. Shared homepage styles stay in assets/css/main.css. */
+.coming-soon .sidebar nav a[aria-current="page"] {
+  color: var(--text);
+  border-color: var(--accent);
+}
+.coming-soon .sidebar nav a { letter-spacing: .06em; }
+.coming-soon .project-hero {
+  display: flex;
+  align-items: center;
+  min-height: calc(100vh - 68px);
+  min-height: calc(100svh - 68px);
+  padding-top: 64px;
+  padding-bottom: 64px;
+  background: linear-gradient(125deg, transparent 68%, #c9b6f307 68.1%, transparent 68.25%), var(--intro);
+}
+.coming-soon .section-inner { width: 100%; max-width: 1000px; }
+.coming-soon .eyebrow { margin-bottom: 24px; }
+.project-title {
+  max-width: 780px;
+  margin: 0;
+  font-size: clamp(29px, 3.5vw, 49px);
+  font-weight: 550;
+  letter-spacing: -.045em;
+  line-height: 1.18;
+}
+.subtitle {
+  max-width: 710px;
+  margin: 18px 0 0;
+  color: var(--accent);
+  font-size: clamp(16px, 1.7vw, 22px);
+  line-height: 1.5;
+}
+.release-note {
+  margin-top: 42px;
+  padding-top: 37px;
+  border-top: 1px solid var(--line);
+}
+.release-note h1 {
+  font-size: clamp(50px, 6.5vw, 92px);
+  font-weight: 550;
+  line-height: 1.08;
+  letter-spacing: -.06em;
+}
+.coming-soon .section-lead { max-width: 550px; margin: 23px 0 28px; }
+.coming-soon .button { min-height: 48px; }
+.coming-soon .site-footer { margin-left: var(--sidebar-width); align-items: baseline; }
+.coming-soon main:focus { outline: none; }
+@media (max-width: 1100px) {
+  .coming-soon .sidebar nav { gap: 26px; }
+  .coming-soon .project-hero { min-height: calc(100svh - 166px); padding-block: 54px; }
+  .coming-soon .site-footer { margin-left: 0; }
+}
+@media (max-width: 700px) {
+  .coming-soon .sidebar nav { justify-content: flex-start; gap: 24px; }
+  .coming-soon .project-hero { min-height: calc(100svh - 182px); padding-block: 40px; }
+  .coming-soon .eyebrow { font-size: 9px; letter-spacing: .13em; }
+  .project-title { font-size: clamp(29px, 7.2vw, 40px); }
+  .desktop-break { display: none; }
+  .release-note { margin-top: 31px; padding-top: 29px; }
+  .release-note h1 { font-size: clamp(45px, 11vw, 68px); }
+  .coming-soon .section-lead { font-size: 16px; }
+  .coming-soon .site-footer { flex-wrap: wrap; gap: 8px 20px; }
+  .coming-soon .site-footer p span { display: block; margin-left: 0; }
+}
