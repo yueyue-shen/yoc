@@ -2,6 +2,8 @@
   ".nojekyll",
   "LICENSE",
   "assets/css/main.css",
+  "assets/fonts/OFL-Lora.txt",
+  "assets/fonts/lora-latin-wght-normal.woff2",
   "assets/img/favicon.png",
   "assets/project.css",
   "index.html",

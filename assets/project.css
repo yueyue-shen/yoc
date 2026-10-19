@@ -16,30 +16,39 @@
 .coming-soon .section-inner { width: 100%; max-width: 1000px; }
 .coming-soon .eyebrow { margin-bottom: 24px; }
 .project-title {
-  max-width: 780px;
+  max-width: 1000px;
   margin: 0;
-  font-size: clamp(29px, 3.5vw, 49px);
-  font-weight: 550;
-  letter-spacing: -.045em;
-  line-height: 1.18;
+  color: var(--text);
+  font-family: var(--heading-font);
+  font-size: clamp(30px, 3.2vw, 44px);
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: -.015em;
+  text-align: left;
 }
-.subtitle {
-  max-width: 710px;
-  margin: 18px 0 0;
-  color: var(--accent);
-  font-size: clamp(16px, 1.7vw, 22px);
-  line-height: 1.5;
+.project-context, .project-focus, .project-source {
+  display: block;
+  line-height: 1.25;
+  letter-spacing: -.015em;
 }
+.project-context, .project-source { font-size: .9em; }
+.project-focus { font-size: 1em; }
+.project-title > span + span { margin-top: 6px; }
 .release-note {
   margin-top: 42px;
   padding-top: 37px;
   border-top: 1px solid var(--line);
 }
-.release-note h1 {
-  font-size: clamp(50px, 6.5vw, 92px);
-  font-weight: 550;
-  line-height: 1.08;
-  letter-spacing: -.06em;
+.release-status {
+  display: inline-block;
+  margin: 0;
+  padding: 4px 12px;
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  color: var(--accent);
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.5;
 }
 .coming-soon .section-lead { max-width: 550px; margin: 23px 0 28px; }
 .coming-soon .button { min-height: 48px; }
@@ -54,10 +63,8 @@
   .coming-soon .sidebar nav { justify-content: flex-start; gap: 24px; }
   .coming-soon .project-hero { min-height: calc(100svh - 182px); padding-block: 40px; }
   .coming-soon .eyebrow { font-size: 9px; letter-spacing: .13em; }
-  .project-title { font-size: clamp(29px, 7.2vw, 40px); }
-  .desktop-break { display: none; }
   .release-note { margin-top: 31px; padding-top: 29px; }
-  .release-note h1 { font-size: clamp(45px, 11vw, 68px); }
+  .release-status { font-size: 16px; }
   .coming-soon .section-lead { font-size: 16px; }
   .coming-soon .site-footer { flex-wrap: wrap; gap: 8px 20px; }
   .coming-soon .site-footer p span { display: block; margin-left: 0; }
